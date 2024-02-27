@@ -17,7 +17,7 @@ class PageController extends Controller
 
     public function show($id) {
             // SELECT * FROM 'movies' WHERE id = $id 
-    // $singleMovie = Movie::where('id', $id)->first();
+      //$singleMovie = Movie::where('id', $id)->first();
         $singleMovie = Movie::find($id);
         return view('movies.show', compact('singleMovie'));
     }
