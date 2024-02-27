@@ -15,7 +15,9 @@
                     <h3>
                         {{ $movie->title }}
                     </h3>
-
+                                <!-- primo paramentro è il nome della rotta 
+                                     secondo paramentro è un array associativo le cui chiavi sono i nomi dei parametri che voglio valorizzare (quindi i nomi del db)
+                                -->
                     <a href="{{ route('movies.show', ['id' => $movie->id]) }}" class="btn btn-outline-dark">
                         Go to movies info!
                     </a> 
